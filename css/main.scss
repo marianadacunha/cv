@@ -61,6 +61,10 @@ main {
             line-height: 1.8em;
             color: color(white);
             
+            .icon {
+                width: 100px;
+            }
+
             span {
                 font-family: $font-stack;
                 color: color(span);
