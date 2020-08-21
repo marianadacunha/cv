@@ -16,7 +16,9 @@ $colors: (
     bg: rgb(235, 235, 235),
     shadow:rgb(214, 214, 214),
     subtitle: rgb(255, 217, 217),
-    red:rgb(138, 0, 0),
+    red: rgb(138, 0, 0),
+    primary-text: rgb(10, 10, 10),
+    secondary-text: rgb(110, 110, 110),
     span:rgb(230, 134, 134)
 );
 
@@ -89,6 +91,46 @@ main {
 
         .title {
             margin: 50px 0px 0px 0px;
+        }
+    }
+
+    .left-column {
+        background-color: color(white);
+        padding: 30px;
+
+        h2 {
+            font-family: $font-stack;
+            font-weight: bolder;
+            text-transform: uppercase;
+            color: color(red);
+        }
+
+        h3 {
+            font-family: $font-stack;
+            color: color(primary-text);
+            margin: 0px 0px 5px 0px;
+        }
+
+        span {
+            font-family: $font-stack;
+            text-transform: uppercase;
+            color: color(secondary-text);
+            font-size: 13px;
+        }
+
+        p {
+            font-family: $font-stack;
+            line-height: 1.8em;
+            color: color(primary-text);
+        }
+
+        ul {           
+            li {
+            font-family: $font-stack;
+            line-height: 1.8em;
+            color: color(primary-text);
+            font-weight: 700;
+            }
         }
     }
 }

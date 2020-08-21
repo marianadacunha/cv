@@ -91,3 +91,41 @@ main .right-column .icon-description {
 main .right-column .title {
   margin: 50px 0px 0px 0px;
 }
+
+main .left-column {
+  background-color: white;
+  padding: 30px;
+}
+
+main .left-column h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #8a0000;
+}
+
+main .left-column h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #0a0a0a;
+  margin: 0px 0px 5px 0px;
+}
+
+main .left-column span {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #6e6e6e;
+  font-size: 13px;
+}
+
+main .left-column p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8em;
+  color: #0a0a0a;
+}
+
+main .left-column ul li {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8em;
+  color: #0a0a0a;
+  font-weight: 700;
+}
