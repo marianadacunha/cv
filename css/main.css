@@ -51,8 +51,20 @@ main .right-column .subtitle {
 
 main .right-column p {
   margin-top: 20px;
-  list-style-type: none;
   font-family: "Open Sans", sans-serif;
   line-height: 1.8em;
+  color: white;
+}
+
+main .right-column p span {
+  font-family: "Open Sans", sans-serif;
+  color: #e68686;
+  font-size: 12px;
+}
+
+main .right-column h2 {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
   color: white;
 }

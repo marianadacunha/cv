@@ -16,7 +16,8 @@ $colors: (
     bg: rgb(235, 235, 235),
     shadow:rgb(214, 214, 214),
     subtitle: rgb(255, 217, 217),
-    column:rgb(138, 0, 0)
+    red:rgb(138, 0, 0),
+    span:rgb(230, 134, 134)
 );
 
 body {
@@ -37,7 +38,7 @@ main {
     background-color: color(white);
     
     .right-column {
-        background-color: color(column);
+        background-color: color(red);
         padding: 30px;
 
         h1 {
@@ -56,10 +57,23 @@ main {
 
         p {
             margin-top: 20px;
-            list-style-type: none;
             font-family: $font-stack;
             line-height: 1.8em;
             color: color(white);
+            
+            span {
+                font-family: $font-stack;
+                color: color(span);
+                font-size: 12px;
+            }
         }
+
+        h2 {
+            text-transform: uppercase;
+            font-family: $font-stack;
+            font-weight: bold;
+            color: color(white);
+        }
+        
     }
 }
