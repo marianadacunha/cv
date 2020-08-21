@@ -1,9 +1,4 @@
-$colors: (
-    white: rgb(255, 255, 255),
-    bg: rgb(235, 235, 235),
-    shadow:rgb(214, 214, 214),
-    column:rgb(138, 0, 0)
-);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 @mixin flex($align) {
     display: flex;
@@ -15,6 +10,15 @@ $colors: (
     @return map-get($colors, $color-name);
 }
 
+$font-stack: 'Open Sans', sans-serif;
+$colors: (
+    white: rgb(255, 255, 255),
+    bg: rgb(235, 235, 235),
+    shadow:rgb(214, 214, 214),
+    subtitle: rgb(255, 217, 217),
+    column:rgb(138, 0, 0)
+);
+
 body {
     @include flex(center);
     background-color: color(bg);
@@ -25,16 +29,37 @@ body {
 }
 
 main {
-    @include flex(flex-end);
-    margin: 35px 0px 35px 0px;
-    width: 70vw;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    height: 100%;
     background-color: color(white);
-    box-shadow: 0px 10px 20px color(shadow);
     
     .right-column {
         background-color: color(column);
-        width: 30%;
-        height: 100%;
+        padding: 30px;
+
+        h1 {
+            font-family: $font-stack;
+            font-weight: bold;
+            text-align: center;
+            color: color(white);
+        }
+
+        .subtitle {
+            font-family: $font-stack;
+            font-weight: 600;
+            text-align: center;
+            color: color(subtitle);
+        }
+
+        p {
+            margin-top: 20px;
+            list-style-type: none;
+            font-family: $font-stack;
+            line-height: 1.8em;
+            color: color(white);
+        }
     }
 }
