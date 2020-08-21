@@ -47,13 +47,18 @@ main .right-column .subtitle {
   font-weight: 600;
   text-align: center;
   color: #ffd9d9;
+  margin-bottom: 50px;
 }
 
 main .right-column p {
-  margin-top: 20px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.8em;
   color: white;
+}
+
+main .right-column p .icon {
+  width: 22px;
+  margin-right: 10px;
 }
 
 main .right-column p span {
@@ -67,4 +72,22 @@ main .right-column h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   color: white;
+}
+
+main .right-column .icon-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+main .right-column .title {
+  margin: 50px 0px 0px 0px;
 }
