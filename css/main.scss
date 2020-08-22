@@ -43,6 +43,12 @@ main {
         background-color: color(red);
         padding: 30px;
 
+        .header-photo {
+            @include flex(center);
+            max-width: 65vw;
+            border-radius: 50%;
+        }
+
         h1 {
             font-family: $font-stack;
             font-weight: bold;
@@ -87,6 +93,7 @@ main {
             flex-direction: row;
             align-items: center;
             margin-top: 20px;
+            font-size: 15px;
         }
 
         .title {
