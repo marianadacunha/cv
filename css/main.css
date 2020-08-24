@@ -30,12 +30,22 @@ main {
   background-color: white;
 }
 
+@media (min-width: 760px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 91vw;
+    margin: 30px 0px 30px 0px;
+    -webkit-box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
 main .right-column {
   background-color: #8a0000;
   padding: 30px;
-}
-
-main .right-column .header-photo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,8 +55,32 @@ main .right-column .header-photo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 760px) {
+  main .right-column {
+    max-width: 30%;
+    display: unset;
+    padding: 30px;
+  }
+}
+
+main .right-column .header-photo {
   max-width: 65vw;
   border-radius: 50%;
+}
+
+@media (min-width: 760px) {
+  main .right-column .header-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+  }
 }
 
 main .right-column h1 {
@@ -54,6 +88,13 @@ main .right-column h1 {
   font-weight: bold;
   text-align: center;
   color: white;
+  margin: 20px 0px 20px 0px;
+}
+
+@media (min-width: 760px) {
+  main .right-column h1 {
+    font-size: 35px;
+  }
 }
 
 main .right-column .subtitle {
@@ -61,7 +102,14 @@ main .right-column .subtitle {
   font-weight: 600;
   text-align: center;
   color: #ffd9d9;
-  margin-bottom: 50px;
+  margin: 0px 0px 20px 0px;
+}
+
+@media (min-width: 760px) {
+  main .right-column .subtitle {
+    font-size: 20px;
+    margin: 10px 0px 30px 0px;
+  }
 }
 
 main .right-column p {
@@ -70,9 +118,26 @@ main .right-column p {
   color: white;
 }
 
+@media (min-width: 760px) {
+  main .right-column p {
+    font-size: 17px;
+    margin: 20px 0px 15px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 main .right-column p .icon {
   width: 22px;
   margin-right: 10px;
+}
+
+@media (min-width: 760px) {
+  main .right-column p .icon {
+    width: 20px;
+    margin-right: 8px;
+  }
 }
 
 main .right-column p span {
@@ -88,7 +153,17 @@ main .right-column h2 {
   color: white;
 }
 
-main .right-column .icon-description {
+@media (min-width: 760px) {
+  main .right-column h2 {
+    margin-top: 40px;
+  }
+}
+
+main .right-column a {
+  text-decoration: none;
+}
+
+main .icon-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,9 +176,17 @@ main .right-column .icon-description {
           align-items: center;
   margin-top: 20px;
   font-size: 15px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
-main .right-column .title {
+main .icon-description:hover {
+  color: #e68686;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+main .icon-description .title {
   margin: 50px 0px 0px 0px;
 }
 
@@ -117,6 +200,19 @@ main .left-column h2 {
   font-weight: bolder;
   text-transform: uppercase;
   color: #8a0000;
+  line-height: 1em;
+  padding-left: 17px;
+  position: relative;
+}
+
+main .left-column h2:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 7px;
+  height: 23px;
+  background: #8a0000;
 }
 
 main .left-column h3 {
