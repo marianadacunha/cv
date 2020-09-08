@@ -89,6 +89,7 @@ main .right-column h1 {
   text-align: center;
   color: white;
   margin: 20px 0px 20px 0px;
+  font-size: 10vw;
 }
 
 @media (min-width: 760px) {
@@ -103,6 +104,7 @@ main .right-column .subtitle {
   text-align: center;
   color: #ffd9d9;
   margin: 0px 0px 20px 0px;
+  font-size: 4vw;
 }
 
 @media (min-width: 760px) {
@@ -146,7 +148,7 @@ main .right-column p span {
   font-size: 12px;
 }
 
-main .right-column h2 {
+main h2 {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -154,12 +156,12 @@ main .right-column h2 {
 }
 
 @media (min-width: 760px) {
-  main .right-column h2 {
+  main h2 {
     margin-top: 40px;
   }
 }
 
-main .right-column a {
+main a {
   text-decoration: none;
 }
 
@@ -232,6 +234,7 @@ main .left-column p {
   font-family: "Open Sans", sans-serif;
   line-height: 1.8em;
   color: #0a0a0a;
+  text-align: justify;
 }
 
 main .left-column ul li {
@@ -240,3 +243,4 @@ main .left-column ul li {
   color: #0a0a0a;
   font-weight: 700;
 }
+/*# sourceMappingURL=main.css.map */

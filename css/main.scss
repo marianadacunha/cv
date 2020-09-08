@@ -40,7 +40,7 @@ main {
         margin: 30px 0px 30px 0px;
         box-shadow: 0px 8px 25px rgba(0, 0, 0, .2);
     }
-    
+
     .right-column {
         background-color: color(red);
         padding: 30px;
@@ -71,6 +71,7 @@ main {
             text-align: center;
             color: color(white);
             margin: 20px 0px 20px 0px;
+            font-size: 10vw;
 
             @include desktop {
                 font-size: 35px;
@@ -83,6 +84,7 @@ main {
             text-align: center;
             color: color(subtitle);
             margin: 0px 0px 20px 0px;
+            font-size: 4vw;
 
             @include desktop {
                 font-size: 20px;
@@ -98,15 +100,15 @@ main {
             @include desktop {
                 font-size: 17px;
                 margin: 20px 0px 15px 0px;
-                white-space: nowrap; 
+                white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-            
+
             .icon {
                 width: 22px;
                 margin-right: 10px;
-  
+
                 @include desktop {
                     width: 20px;
                     margin-right: 8px;
@@ -119,6 +121,7 @@ main {
                 font-size: 12px;
             }
         }
+    }
 
         h2 {
             text-transform: uppercase;
@@ -130,10 +133,9 @@ main {
                 margin-top: 40px;
             }
         }
-        
+
         a {
             text-decoration: none;
-            }
         }
 
         .icon-description {
@@ -143,66 +145,68 @@ main {
             margin-top: 20px;
             font-size: 15px;
             transition-duration: 0.4s;
+
             &:hover {
                 color: color(span);
                 transition-duration: 0.4s;
-        }
+            }
 
-        .title {
-            margin: 50px 0px 0px 0px;
-        }
-    }
-
-    .left-column {
-        background-color: color(white);
-        padding: 30px;
-
-        h2 {
-            font-family: $font-stack;
-            font-weight: bolder;
-            text-transform: uppercase;
-            color: color(red);
-            line-height: 1em;
-            padding-left: 17px;
-            position: relative;
-
-            &:before {
-                content: '';
-                display: inline-block;
-                position: absolute;
-                left: 0;
-                width: 7px;
-                height: 23px;
-                background: color(red);
+            .title {
+                margin: 50px 0px 0px 0px;
             }
         }
 
-        h3 {
-            font-family: $font-stack;
-            color: color(primary-text);
-            margin: 0px 0px 5px 0px;
-        }
+        .left-column {
+            background-color: color(white);
+            padding: 30px;
 
-        span {
-            font-family: $font-stack;
-            text-transform: uppercase;
-            color: color(secondary-text);
-            font-size: 13px;
-        }
+            h2 {
+                font-family: $font-stack;
+                font-weight: bolder;
+                text-transform: uppercase;
+                color: color(red);
+                line-height: 1em;
+                padding-left: 17px;
+                position: relative;
 
-        p {
-            font-family: $font-stack;
-            line-height: 1.8em;
-            color: color(primary-text);
-        }
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    width: 7px;
+                    height: 23px;
+                    background: color(red);
+                }
+            }
 
-        ul {           
-            li {
-            font-family: $font-stack;
-            line-height: 1.8em;
-            color: color(primary-text);
-            font-weight: 700;
+            h3 {
+                font-family: $font-stack;
+                color: color(primary-text);
+                margin: 0px 0px 5px 0px;
+            }
+
+            span {
+                font-family: $font-stack;
+                text-transform: uppercase;
+                color: color(secondary-text);
+                font-size: 13px;
+            }
+
+            p {
+                font-family: $font-stack;
+                line-height: 1.8em;
+                color: color(primary-text);
+                text-align: justify;
+            }
+
+            ul {
+                li {
+                    font-family: $font-stack;
+                    line-height: 1.8em;
+                    color: color(primary-text);
+                    font-weight: 700;
+                }
             }
         }
     }
-}
